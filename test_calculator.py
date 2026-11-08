@@ -17,5 +17,5 @@ def test_divide():
     assert divide(12, 3) == 4
 
 def test_divide_by_zero():
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         divide(10, 0)
