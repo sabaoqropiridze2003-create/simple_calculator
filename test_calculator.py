@@ -1,7 +1,7 @@
 import pytest
 
 
-from calculator import add, divide, square, subtract, multiply
+from calculator import add, divide, power, square, subtract, multiply
 
 def test_add():
     assert add(1, 2) == 3
@@ -22,3 +22,6 @@ def test_divide_by_zero():
 
 def test_square():
     assert square(4) == 16
+
+def test_power():
+    assert power(2, 3) == 8
